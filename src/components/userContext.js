@@ -9,7 +9,7 @@ const UserContext = (props) =>{
      //get logged in user details
   const getUser =async () => {
     //todo api call later
-    const response = await fetch("http://localhost:5000/api/getuser", {
+    const response = await fetch("https://foodapp-backend-smr3.onrender.com/api/getuser", {
       method: "GET", // *GET, POST, PUT, DELETE, etc.
       headers: {
         "Content-Type": "application/json",
@@ -26,7 +26,7 @@ const UserContext = (props) =>{
   
   const getOrders =async () => {
     //todo api call later
-    const response = await fetch("http://localhost:5000/api/fetchallorders", {
+    const response = await fetch("https://foodapp-backend-smr3.onrender.com/api/fetchallorders", {
       method: "GET", // *GET, POST, PUT, DELETE, etc.
       headers: {
         "Content-Type": "application/json",
